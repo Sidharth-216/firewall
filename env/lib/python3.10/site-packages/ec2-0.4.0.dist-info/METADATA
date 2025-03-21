@@ -1,0 +1,22 @@
+Metadata-Version: 2.0
+Name: ec2
+Version: 0.4.0
+Summary: Query for AWS EC2 instances, security groups, and VPCs simply
+Home-page: https://github.com/mattrobenolt/ec2
+Author: Matt Robenolt
+Author-email: matt@ydekproductions.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Requires-Dist: boto
+
+ec2
+===
+
+A light-weight wrapper around boto to query for AWS EC2 instances,
+security groups, and VPCs in a sane way.
+
+

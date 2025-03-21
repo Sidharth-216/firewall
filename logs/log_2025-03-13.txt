@@ -1,0 +1,6 @@
+20:51:22 - Blocked IP: 192.168.1.1
+20:51:22 - Failed to send alert email: [Errno -2] Name or service not known
+22:49:54 - Blocked IP: 192.168.1.1
+22:49:55 - Failed to send alert email: [Errno -2] Name or service not known
+22:50:38 - Blocked IP: 192.168.149.56
+22:50:38 - Failed to send alert email: [Errno -2] Name or service not known

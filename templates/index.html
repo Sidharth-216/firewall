@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewall Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: rgba(255, 255, 255, 0.8);
+            margin: 10px auto;
+            padding: 10px;
+            width: 50%;
+            border-radius: 5px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        form {
+            margin: 20px auto;
+            width: 50%;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff7e5f;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #feb47b;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Firewall Management</h1>
+
+    <h2>Whitelist</h2>
+    <ul>
+        {% for ip in whitelist %}
+            <li>{{ ip }}</li>
+        {% endfor %}
+    </ul>
+    <form action="{{ url_for('add_whitelist') }}" method="post" onsubmit="return validateIP(this.ip.value)">
+        <input type="text" name="ip" placeholder="Add IP to Whitelist" required>
+        <button type="submit">Add</button>
+    </form>
+    <form action="{{ url_for('remove_whitelist') }}" method="post" onsubmit="return validateIP(this.ip.value)">
+        <input type="text" name="ip" placeholder="Remove IP from Whitelist" required>
+        <button type="submit">Remove</button>
+    </form>
+    <form action="{{ url_for('add_blacklist') }}" method="post" onsubmit="return validateIP(this.ip.value)">
+        <input type="text" name="ip" placeholder="Add IP to Blacklist" required>
+        <button type="submit">Add</button>
+    </form>
+    <form action="{{ url_for('remove_blacklist') }}" method="post">
+        <input type="text" name="ip" placeholder="Remove IP from Blacklist" required>
+        <button type="submit">Remove</button>
+    </form></form>
+
+    <h2>Blacklist</h2>
+    <ul>
+        {% for ip in blacklist %}
+            <li>{{ ip }}</li>
+        {% endfor %}
+    </ul>
+    <form action="{{ url_for('add_blacklist') }}" method="post">
+        <input type="text" name="ip" placeholder="Add IP to Blacklist" required>
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>Blocked IPs</h2>
+    <ul>
+        {% for ip in blocked %}
+            <li>{{ ip }}</li>
+        {% endfor %}
+    </ul>
+    <form action="{{ url_for('unblock_ip_route') }}" method="post" onsubmit="return validateIP(this.ip.value)">
+        <input type="text" name="ip" placeholder="Unblock IP" required>
+        <button type="submit">Unblock</button>
+    </form>
+
+    <form action="{{ url_for('screening') }}" method="get">
+        <button type="submit">Go to Screening</button>
+    </form>
+<script>
+    function validateIP(ip) {
+        const ipv4Pattern = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+        const ipv6Pattern = /^([0-9a-fA-F]{1,4}:){7}([0-9a-fA-F]{1,4}|:)$/;
+        if (ipv4Pattern.test(ip) || ipv6Pattern.test(ip)) {
+            return true;
+        } else {
+            alert('Invalid IP address');
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

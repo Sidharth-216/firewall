@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewall Management</title>
+    <link rel="stylesheet" href="static/base.css">
+    <script src="static/base.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{{ url_for('dashboard') }}">Firewall Admin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('rules_page') }}">Traffic Monitor</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('get_blocked_ips') }}">Blocked IPs</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('get_logs') }}">Manage Lists</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('get_logs') }}">Logs</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('get_settings') }}">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Firewall Management System</p>
+    </footer>
+
+</body>
+</html>

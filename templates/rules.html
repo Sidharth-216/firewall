@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewall Rules Management</title>
+    <link rel="stylesheet" href="static/rules.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Firewall Rules Management</h1>
+        
+        <div class="rule-input">
+            <input type="text" id="ip-address" placeholder="Enter IP address">
+            <select id="rule-action">
+                <option value="allow">Allow</option>
+                <option value="block">Block</option>
+            </select>
+            <button onclick="addRule()">Apply Rule</button>
+        </div>
+        
+        <h2>Existing Rules</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>IP Address</th>
+                    <th>Action</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="rules-list">
+                <!-- Rules will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="static/rules.js"></script>
+</body>
+</html>

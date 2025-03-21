@@ -1,0 +1,109 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Dashboard container */
+.dashboard-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Stats section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+.stat-box h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.stat-box p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Logs table */
+.logs {
+    margin-top: 20px;
+}
+
+.logs table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.logs th, .logs td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.logs th {
+    background-color: #007bff;
+    color: white;
+}
+
+.logs tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.logs tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+    }
+    
+    .stat-box {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Blocked IPs{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="page-title">Blocked IPs Management</h2>
+    <table class="blocked-ips-table">
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'blocked_ips.css' %}">
+        <tbody id="blocked-ips-body">
+            <!-- Blocked IPs will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <h3>Add IP to Blocklist</h3>
+    <input type="text" id="ip-address" placeholder="Enter IP Address">
+    <input type="text" id="reason" placeholder="Enter Reason">
+    <button onclick="addBlockedIP()">Block IP</button>
+</div>
+{% endblock %}

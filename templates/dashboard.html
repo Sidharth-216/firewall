@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewall Dashboard</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <nav>
+        <h1>Firewall Dashboard</h1>
+        <ul>
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/manage-rules">Manage Rules</a></li>
+            <li><a href="/settings">Settings</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <h2>Firewall Logs</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>IP Address</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="log-entries">
+                <!-- Logs will be dynamically loaded here -->
+            </tbody>
+        </table>
+    </section>
+    <script src="static/script.js"></script>
+</body>
+</html>

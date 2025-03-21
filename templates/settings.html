@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="settings-container">
+    <h2>Firewall Settings</h2>
+    
+    <label for="traffic-threshold">Traffic Threshold:</label>
+    <input type="number" id="traffic-threshold" min="1" value="100">
+    
+    <label for="log-retention">Log Retention (days):</label>
+    <input type="number" id="log-retention" min="1" value="30">
+    
+    <label for="auto-block">Auto-Block Suspicious IPs:</label>
+    <select id="auto-block">
+        <option value="enable">Enable</option>
+        <option value="disable">Disable</option>
+    </select>
+    
+    <button onclick="saveSettings()">Save Settings</button>
+</div>
+{% endblock %}

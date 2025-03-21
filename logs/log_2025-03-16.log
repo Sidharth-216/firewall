@@ -1,0 +1,8 @@
+2025-03-16 20:06:07 - Blocked IP: 192.168.112.56
+2025-03-16 20:06:07 - Failed to send alert email: [Errno -2] Name or service not known
+2025-03-16 20:06:24 - Blocked IP: 104.18.18.125
+2025-03-16 20:06:24 - Failed to send alert email: [Errno -2] Name or service not known
+2025-03-16 20:07:15 - Blocked IP: 104.18.19.125
+2025-03-16 20:07:15 - Failed to send alert email: [Errno -2] Name or service not known
+2025-03-16 20:47:40 - Blocked IP: 192.168.112.101
+2025-03-16 20:47:55 - Failed to send alert email: [Errno -3] Temporary failure in name resolution

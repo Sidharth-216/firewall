@@ -1,0 +1,60 @@
+00:12:33 - Blocked IP: 192.168.1.1
+00:12:34 - Failed to send alert email: [Errno -2] Name or service not known
+00:12:41 - Blocked IP: 192.168.149.56
+00:12:41 - Failed to send alert email: [Errno -2] Name or service not known
+00:37:37 - Blocked IP: 192.168.1.1
+00:37:37 - Failed to send alert email: [Errno -2] Name or service not known
+00:37:47 - Blocked IP: 192.168.149.56
+00:37:47 - Failed to send alert email: [Errno -2] Name or service not known
+00:43:41 - Blocked IP: 192.168.1.1
+00:43:41 - Failed to send alert email: [Errno -2] Name or service not known
+00:43:52 - Blocked IP: 192.168.149.56
+00:43:52 - Failed to send alert email: [Errno -2] Name or service not known
+10:41:37 - Updated blacklist from external source.
+10:42:30 - Updated blacklist from external source.
+10:43:49 - Updated blacklist from external source.
+10:43:52 - Blocked IP: 192.168.149.56
+10:43:53 - Failed to send alert email: [Errno -2] Name or service not known
+10:43:53 - Blocked IP: 192.168.149.98
+10:43:58 - Failed to send alert email: [Errno -2] Name or service not known
+10:46:27 - Blocked IP: 192.168.1.1
+10:46:27 - Failed to send alert email: [Errno -2] Name or service not known
+10:48:11 - Blocked IP: 192.168.1.1
+10:48:11 - Failed to send alert email: [Errno -2] Name or service not known
+10:48:28 - Blocked IP: 192.168.149.56
+10:48:28 - Failed to send alert email: [Errno -2] Name or service not known
+19:18:04 - Updated blacklist from external source.
+19:18:12 - Blocked IP: 192.168.149.56
+19:18:13 - Failed to send alert email: [Errno -2] Name or service not known
+19:18:13 - Blocked IP: 192.168.149.98
+19:18:18 - Failed to send alert email: [Errno -2] Name or service not known
+19:18:18 - Blocked IP: 192.168.1.1
+19:18:18 - Failed to send alert email: [Errno -2] Name or service not known
+19:19:32 - Updated blacklist from external source.
+19:19:35 - Blocked IP: 192.168.149.98
+19:19:35 - Failed to send alert email: [Errno -2] Name or service not known
+19:19:38 - Blocked IP: 192.168.1.1
+19:19:38 - Failed to send alert email: [Errno -2] Name or service not known
+19:19:48 - Blocked IP: 192.168.149.56
+19:19:48 - Failed to send alert email: [Errno -2] Name or service not known
+19:22:56 - Updated blacklist from external source.
+19:22:59 - Blocked IP: 192.168.149.98
+19:22:59 - Failed to send alert email: [Errno -2] Name or service not known
+19:23:06 - Blocked IP: 192.168.149.56
+19:23:06 - Failed to send alert email: [Errno -2] Name or service not known
+19:23:39 - Updated blacklist from external source.
+19:23:42 - Blocked IP: 192.168.149.98
+19:23:42 - Failed to send alert email: [Errno -2] Name or service not known
+19:23:50 - Blocked IP: 192.168.149.56
+19:23:50 - Failed to send alert email: [Errno -2] Name or service not known
+19:24:02 - Blocked IP: 192.168.1.1
+19:24:03 - Failed to send alert email: [Errno -2] Name or service not known
+19:25:37 - Updated blacklist from external source.
+19:25:38 - Blocked IP: 192.168.149.98
+19:25:38 - Failed to send alert email: [Errno -2] Name or service not known
+19:25:52 - Blocked IP: 192.168.149.56
+19:25:52 - Failed to send alert email: [Errno -2] Name or service not known
+19:27:25 - Blocked IP: 192.168.149.56
+19:27:25 - Failed to send alert email: [Errno -2] Name or service not known
+19:27:33 - Blocked IP: 192.168.1.1
+19:27:33 - Failed to send alert email: [Errno -2] Name or service not known

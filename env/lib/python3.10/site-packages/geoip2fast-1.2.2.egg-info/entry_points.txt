@@ -1,0 +1,4 @@
+[console_scripts]
+geoip2dat = geoip2fast.geoip2dat:main_function
+geoip2fast = geoip2fast.geoip2fast:main_function
+
